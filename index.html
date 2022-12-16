@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <div class="bill-container inp-container sub-container">
+      <div class="bill-text">Bill</div>
+      <div class="bill">
+        <input class="bill-amount" type="number" placeholder="0.00" autofocus id="bill">
+      </div>
+    </div>
+
+    <div class="tip-percent-container sub-container">
+      <div class="tip-select-text"> Select Tip %</div>
+      <div class="button-area">
+        <button class="tip-option" name="0.05">5%</button>
+        <button class="tip-option" name="0.10">10%</button>
+        <button class="tip-option" name="0.15">15%</button>
+        <button class="tip-option" name="0.25">25%</button>
+        <button class="tip-option" name="0.50">50%</button>
+        <input class="tip-option-custom" id="custom" placeholder="Custom" type="number"></input>
+      </div>
+    </div>
+
+    <div class="people-container inp-container sub-container">
+      <div class="people-text"> Number of People</div>
+      <input class="people-amount" type="number" placeholder="0.00" autofocus>
+    </div>
+
+
+    <div class="result-container sub-container">
+      <div class="result-grid">
+        <div class="tip-amount-text">
+          <span>Tip Amount</span>
+          / person
+        </div>
+        <div class="tip-amount numbers">
+          $0.00
+        </div>
+        <div class="tip-total-text">
+          <span>Total</span>
+          / person
+        </div>
+        <div class="tip-total numbers">
+          $0.00
+        </div>
+
+        <div class="reset-container">
+          <div class="reset-button">
+            Reset
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+<script src="codigo.js"></script
+</html>
